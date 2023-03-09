@@ -20,6 +20,8 @@ O projeto é mais um desafio do Curso Discover da Rocketseat, sendo que o intuit
 ## 📷 Prints
 
 ![img](./assets/images/screenshots/desktop1.png) ![img](./assets/images/screenshots/desktop2b.png)
+
+
 ![img](./assets/images/screenshots/mobile2.png) ![img](./assets/images/screenshots/mobile3.png)
 
 
