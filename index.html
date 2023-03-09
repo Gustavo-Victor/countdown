@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--styles-->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <!--scripts-->
+    <script src="./assets/scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <!--main-->
+    <main class="main-section">
+        <!-- <img class="img img-top" src="./assets/images/top-image.svg" alt="Top"> -->
+        <div class="container">
+            <h1 class="title">ready to launch in...</h1>
+            <div class="countdown">
+                <div class="time">
+                    <span class="description">Days</span>
+                    <span class="numeric" id="days">00</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="time">
+                    <span class="description">Hours</span>
+                    <span class="numeric" id="hours">00</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="time">
+                    <span class="description">Minutes</span>
+                    <span class="numeric" id="minutes">00</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="time">
+                    <span class="description">Seconds</span>
+                    <span class="numeric" id="seconds">00</span>
+                </div>
+            </div>
+            <p class="slogan">Inscreva-se para saber mais sobre o lançamento</p>
+            <button type="button" id="subscribe" class="subscribe">Inscreva-se</button>
+        </div>
+        <!-- <img class="img img-bottom" src="./assets/images/bottom-image.svg" alt="Bottom"> -->
+    </main>
+
+    <!--modal-->
+    <div class="modal-overlay">
+        <div class="modal">
+            <h2 class="modal-title">Se inscreva</h2>
+            <form class="modal-form">
+                <div class="input-group">
+                    <label class="sr-only" for="name">Nome: </label>
+                    <input required maxlength="70" minlength="3" type="text" name="name" id="name" class="form-input" placeholder="Digite seu nome...">
+                </div>
+                <div class="input-group">
+                    <label class="sr-only" for="email">E-mail: </label>
+                    <input required maxlength="80" minlength="11" type="email" name="email" id="email" class="form-input"
+                        placeholder="Digite seu melhor e-mail...">
+                </div>
+                <div class="input-group">
+                    <button type="submit" id="submit" class="form-btn submit">Enviar</button>
+                    <button type="button" id="cancel" class="form-btn cancel">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
